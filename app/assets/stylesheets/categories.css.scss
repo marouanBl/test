@@ -1,0 +1,43 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#quickquestion {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	text-align: center;
+
+	border-radius: 10px;
+
+	background-color: #eee;
+
+	input {
+		width: 945px;
+	}
+
+	.actions {
+		margin-top: 20px;
+
+		input {
+			width: 950px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			background-color: #1B9B64;
+
+			border-radius: 5px;
+			border: 0px;
+
+			color: #fff;
+			font-size: 20px;
+			font-weight: 100;
+		}
+	}
+}

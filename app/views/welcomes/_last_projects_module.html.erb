@@ -1,0 +1,75 @@
+
+<div id="lastprojectsmodule">
+	<div class="header">
+		<div class="left">
+			<%= image_tag "icons/startup.png" %> Derniers Projets Ajoutés
+		</div>
+
+		<div class="right">
+			<%= link_to "Découvrir le tout", projects_path(	) %>
+		</div>
+	</div>
+
+	<div class="projectsbox">
+
+		<% Project.order("created_at").last(4).each do |project| %>
+		<div class="projectbox">
+			<div class="project">
+				<div class="image">
+					<%= image_tag project.miniature.to_s %>
+				</div>
+
+				<div class="title">
+					<%= link_to project.title, project_path(project) %>
+				</div>
+
+				<div class="founder">
+					par <%= link_to project.user.name, user_path(project.user) %>
+				</div>
+				
+				<div class="abstract">
+					<%= project.abstract %>
+				</div>
+
+				<div class="location">
+					<%= image_tag "icons/location.png" %><%= project.location.name %>, Tunisie
+				</div>
+				
+			</div>
+			<div class="projectstats">
+				<div class="progressbar">
+					&nbsp;
+
+					<div class="fill">
+						
+					</div>
+				</div>
+
+				<div class="percentages">
+					<div class="percentage">
+						<div class="number">
+							92%
+						</div>
+
+						<div class="label">
+							Investis
+						</div>
+					</div>
+					<div class="percentage">
+						<div class="number">
+							<%= project.somme %>
+						</div>
+
+						<div class="label">
+							Dinars
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<% end %>
+
+	</div>
+</div>
+

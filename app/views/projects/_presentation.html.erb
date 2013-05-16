@@ -1,0 +1,23 @@
+<div class="presentation">
+	<%= image_tag @project.miniature_url.to_s %>
+	
+	<div class="big">
+		Un petit mot sur mon projet
+	</div>
+	<%= @project.description %>
+
+	<div class="big">
+		Ce qu'il faut pour que ca démarre
+	</div>
+	<%= @project.needs %>
+
+	<div class="big">
+		Ce qui est à surmonter
+	</div>
+	<%= @project.challenges %>
+
+	<div class="big">
+		Si vous voulez bien laisser un avis
+	</div>
+	<%= render "projects/facebook_comment" %>
+</div>

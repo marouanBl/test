@@ -1,0 +1,78 @@
+      <div id="projectssheader">
+        <div class="big">
+        	Rencontrez votre nouveau projet
+        </div>
+
+        <div class="desc">
+        	Commencer déjà par le baptiser, accorder lui un nom et quelques autres détails
+        </div>
+      </div>
+
+      <div id="projectforms">
+        
+        <div class="questionscolumn">
+
+          <div class="projectform">
+           <div class="label">Nom de votre projet</div>
+            <div class="form"><input id="project_title" name="project[title]" size="30" type="text" /></div>
+          </div>
+
+
+
+          <div class="projectform">
+           <div class="label">Une miniature de votre projet</div>
+            <div class="form"><input id="project_miniature" name="project[miniature]" type="file" /></div>
+          </div>
+
+
+
+          <div class="projectform">
+            <div class="label">Categorie</div>
+            <div class="form">
+              <select id="project_category_id" name="project[category_id]">
+                <% Category.all.each do |category|  %>
+                <option value="<%= category.id %>"><%= category.name %> </option>
+                <% end %>
+              </select>
+            </div>
+          </div>
+
+
+
+          <div class="projectform">
+            <div class="label">Abstract</div>
+            <div class="form"><textarea cols="40" id="project_abstract" name="project[abstract]" rows="5"></textarea></div>
+          </div>
+
+
+          <div class="projectform">
+            <div class="label">Localisation</div>
+            <div class="form">
+              <select id="project_location_id" name="project[location_id]">
+                <% Location.all.each do |location|  %>
+                <option value="<%= location.id %>"><%= location.name %> </option>
+                <% end %>
+              </select>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="sidesteps">
+
+          <div class="steps">
+            <a href="#stepbystep" data-slide-to="0">Phase 1</a></br></br>
+            <a href="#stepbystep" data-slide-to="1">Phase 2</a></a></br></br>
+            <a href="#stepbystep" data-slide-to="2">Phase 3</a>
+          </div>
+          
+          <div class="stepscroller">
+            <!-- <a href="#stepbystep" data-slide="prev">Précédent</a> -->
+            <a href="#stepbystep" data-slide="next">Suivant</a>
+          </div>
+          
+
+        </div>
+
+      </div>

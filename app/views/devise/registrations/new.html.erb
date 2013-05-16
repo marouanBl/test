@@ -1,0 +1,61 @@
+
+
+<div id="register" class="devise">
+  <div class="register">
+    <div class="explanation">
+      <p>One-click sign in if you've already connected your Facebook account, or quickly sign up for Twitch with Facebook</p>
+      <p>By clicking Sign Up, you are indicating that you have read and agree to the Terms of Service</p>
+    </div>
+
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+	  <%= devise_error_messages! %>
+
+      <div id="forminput">
+        <div class="label">Name</div>
+        <div class="input">
+          <input autofocus="autofocus" id="user_name" name="user[name]" size="30" type="text" value="" />
+        </div>
+      </div>
+
+
+      <div id="forminput">
+        <div class="label">Username</div>
+        <div class="input">
+          <input autofocus="autofocus" id="user_username" name="user[username]" size="30" type="text" value="" />
+        </div>
+      </div>
+ 
+      <div id="forminput">
+        <div class="label">Email</div>
+        <div class="input">
+          <input autofocus="autofocus" id="user_email" name="user[email]" size="30" type="email" value="" />
+        </div>
+      </div>
+
+      <div id="forminput">
+        <div class="label">Password</div>
+        <div class="input">
+          <input id="user_password" name="user[password]" size="30" type="password" />
+        </div>
+      </div>
+
+      <div id="forminput">
+        <div class="label">Confirm Password</div>
+        <div class="input">
+          <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
+        </div>
+      </div>
+
+      <div id="forminput">
+        <div class="label">Add Avatar</div>
+        <div class="input">
+          <input id="user_avatar" name="user[avatar]" size="30" type="file" />
+        </div>
+      </div>
+
+      <input name="commit" type="submit" value="Sign up" class="inputbutton" />
+
+    <% end %>
+  </div>
+
+</div>

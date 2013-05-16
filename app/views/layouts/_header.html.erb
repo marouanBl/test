@@ -1,0 +1,36 @@
+
+<header>
+  <div class="logo">
+    <%= link_to (image_tag "logo.png"), root_path() %>
+  </div>
+
+  <div class="menu">
+
+    <ul>
+      <!-- <li><%= link_to 'Who are we?', 'presentation' %></li>
+      <li><%= link_to "Ask for Coaching", categories_path() %></li>-->
+      <li><%= link_to "Poser des Questions", questions_path() %></li>
+      <li><%= link_to "Découvrir", projects_path() %></li>
+      <li><%= link_to "Lancer un Projet", startprojects_path() %></li>
+      <li><input type="text" size="30"></li>
+    </ul>
+    
+  </div>
+
+  <div class="personal">
+
+    <ul>
+      <% unless user_signed_in? %>
+      <li><%= link_to 'Se Connecter', login_path() %></li>
+      <li><%= link_to "S'enregistrer", register_path() %></li>
+      <% end %>
+
+      <% if user_signed_in? %>
+      <li><%= link_to current_user.username, user_path(current_user) %></li>
+      <li><%= link_to "Se Deconnecter", logout_path() %></li>
+      <% end %>
+    </ul>
+
+  </div>
+</header>
+

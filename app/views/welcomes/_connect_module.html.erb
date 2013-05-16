@@ -1,0 +1,16 @@
+
+<% unless user_signed_in? %>
+<div id="connectmodule">
+	<div class="insideconnect">
+		<div class="normallogins">
+			<div class="big">
+				Découvrez d'énorme projets avec vos amis, réalisez vos ambitions!
+			</div>
+			Vous pouvez soit vous <%= link_to 'enregistrer', register_path() %> soit vous <%= link_to 'connecter', login_path() %> pour en profiter plus.
+		</div>
+		<div class="sociallogins">
+			<%= link_to 'Se Connecter Avec Facebook', "", :class => "facebook" %>
+		</div>
+	</div>
+</div>
+<% end %>

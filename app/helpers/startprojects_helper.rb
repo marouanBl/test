@@ -1,0 +1,2 @@
+module StartprojectsHelper
+end

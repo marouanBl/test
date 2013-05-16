@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Wizard question:</b>
+  <%= @businessplan.wizard_question %>
+</p>
+
+<p>
+  <b>Wizard answer:</b>
+  <%= @businessplan.wizard_answer %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @businessplan.status %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @businessplan.order %>
+</p>
+
+<p>
+  <b>Wizard step:</b>
+  <%= @businessplan.wizard_step_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_businessplan_path(@businessplan) %> |
+<%= link_to 'Back', businessplans_path %>

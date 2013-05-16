@@ -1,0 +1,43 @@
+
+
+<%= form_for(@project, :html =>{:multipart => true }) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<%= f.hidden_field :user_id, :value => current_user.id %>
+
+<div id="stepbystep" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+
+      <%= render "projects/first_phase" %>
+
+    </div>
+
+    <div class="item">
+    
+      <%= render "projects/second_phase" %>
+    
+    </div>
+
+    <div class="item">
+    
+      <%= render "projects/third_phase" %>
+    
+    </div>
+
+  </div>
+</div>
+
+<% end %>

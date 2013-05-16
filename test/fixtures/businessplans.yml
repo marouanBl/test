@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  wizard_question: MyText
+  wizard_answer: MyText
+  status: false
+  order: 1
+  wizard_step_id: 1
+
+two:
+  wizard_question: MyText
+  wizard_answer: MyText
+  status: false
+  order: 1
+  wizard_step_id: 1

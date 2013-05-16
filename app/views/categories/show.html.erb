@@ -1,0 +1,51 @@
+<div id="questionscategory">
+
+
+    <!--<div class="tree">
+    	<a href="">Home</a>
+    </div>-->
+	
+	<div class="header">
+		<%= @category.name %>
+	</div>
+
+	<div class="questionstable">
+		<div class="tableheader">
+			<div class="question">
+				Question
+			</div>
+
+			<div class="replies">
+				Number of Replies
+			</div>
+
+			<div class="byanddate">
+				Asked
+			</div>
+		</div>
+
+		<div class="questions">
+
+			<% Question.where('category_id = ?', @category.id).each do |question| %>
+			<div class="question">
+				<div class="content">
+					<%= link_to question.subject, question_path(question) %>
+				</div>
+
+				<div class="replies">
+					<%= Answer.where("question_id = ?", question.id).count %>
+				</div>
+
+				<div class="byanddate">
+					by <%= link_to question.user.username, user_path(question.user) %>
+				</div>
+			</div>
+	  		<% end %>
+			
+		</div>
+
+	</div>
+
+	<%= render "categories/ask_new_question" %>
+</div>
+

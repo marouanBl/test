@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Biography:</b>
+  <%= @user.biography %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @user.website %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @user.birthday %>
+</p>
+
+<p>
+  <b>Birthmonth:</b>
+  <%= @user.birthmonth %>
+</p>
+
+<p>
+  <b>Birthyear:</b>
+  <%= @user.birthyear %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>Town:</b>
+  <%= @user.town %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @user.country_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @user.state_id %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <b>Cid:</b>
+  <%= @user.cid %>
+</p>
+
+<p>
+  <b>Is coach:</b>
+  <%= @user.is_coach %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

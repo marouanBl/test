@@ -1,0 +1,706 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require redactor-rails
+ *= require_self
+ *= require_tree .
+ */
+
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	z-index: 10000;
+
+	display: block;
+
+	min-width: 100%;
+	height: 60px;
+
+	background-color: #212937;
+	opacity: 0.9;
+
+	margin: 0px;
+	padding: 0 0 0 0;
+
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 100;
+
+	.logo {
+		display: inline-block;
+
+		margin: 0px;
+		padding: 0px;
+
+		margin-left: 30px;
+		margin-right: 40px;
+
+	}
+
+	.menu {
+		display: inline-block;
+
+		margin: 0px;
+		padding: 0px;
+
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+		a {
+			color: #fff;
+
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-weight: 100;
+			font-size: 18px;
+		}
+
+		ul {
+			margin: 0px;
+			padding: 0px;
+
+			li {
+				display: inline-block;
+				vertical-align: middle;
+
+				margin: 0px;
+				padding: 0px;
+
+				padding-right: 10px;
+				margin-left: 10px;
+
+				line-height: 60px;
+
+				input {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+
+	.personal {
+		display: inline-block;
+
+		margin: 0px;
+		margin-left: 20px;
+
+		a {
+			color: #fff;
+
+
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-weight: 100;
+			font-size: 18px;
+		}
+
+		ul {
+			li {
+				display: inline-block;
+
+				padding-right: 10px;
+
+				line-height: 60px;
+
+
+			}
+		}
+	}
+}
+
+
+
+#heromodule {
+	width: 100%;
+
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+
+#introquestionsmodule {
+	background-color: #fff;
+
+	margin: 0px;
+	padding: 20px;
+	display: block;
+
+	text-align: center;
+
+	border-top: 1px solid #C6CCC0;
+
+
+	.header {
+		width: 1000px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+
+		text-align: center;
+
+		display: block;
+
+		.left {
+			text-align: left;
+			font-size: 34px;
+			font-weight: bold;
+			color: #5C5C5B;
+
+			margin-bottom: 20px;
+
+			width: 480px;
+
+			display: inline-block;
+
+			img {
+				vertical-align: baseline;
+
+				height: 30px;
+				width: auto;
+			}
+		}
+
+		.right {
+			text-align: right;
+
+			width: 400px;
+
+			display: inline-block;
+		}
+	}
+
+
+	.lastone {
+		display: inline-block;
+
+		text-align: left;
+
+		width: 400px;
+
+		margin-right: 20px;
+
+	}
+
+	.listcategories {
+		display: inline-block;
+		vertical-align: top;
+
+		border-left: 1px solid #85c443;
+
+		text-align: left;
+
+		margin: 0px;
+		padding: 0px 0 0 0px;
+
+		width: 200px;
+		min-height: 200px;
+
+		ul {
+			margin: 0px;
+			padding: 0px;
+
+			li {
+				list-style: none;
+
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 16px;
+				line-height: 25px;
+
+				margin: 0px;
+				padding: 0px;
+
+
+				a {
+					padding-left: 10px;
+					text-decoration: none;
+					color: #000;
+
+				line-height: 25px;
+
+					&:hover {
+						border-left: 3px solid #85c443;
+					}
+				}
+
+				
+			}
+		}
+	}
+
+}
+
+#connectmodule {
+	display: block;
+	margin: 0px;
+	padding-top: 40px;
+
+
+	border-top: 1px solid #C6CCC0;
+
+	min-height: 200px;
+	width: 100%;
+	background-color: #EAF0E5;
+
+	.insideconnect {
+		width: 900px;
+		margin: 0 auto;
+		padding: 20px;
+
+		display: block;
+
+		background-color: #fff;
+
+		border-radius: 5px;
+		border: 1px solid #C6CCC0;
+
+		text-align: center;
+
+		.normallogins {
+			display: inline-block;
+			vertical-align: top;
+
+			text-align: left;
+
+			width: 400px;
+
+			.big {
+				font-size: 24px;
+				font-weight: bold;
+
+				margin-bottom: 20px;
+			}
+		}
+
+		.sociallogins {
+			display: inline-block;
+			vertical-align: middle;
+
+			padding-top: 20px;
+
+			text-align: center;
+
+			width: 400px;
+
+			.facebook {
+				background-color: #2D4486;
+
+				border-radius: 5px;
+
+				padding: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
+
+				font-size: 24px;
+				font-weight: bold;
+				color: #fff;
+			}
+
+		}
+	}
+}
+
+
+#lastprojectsmodule {
+	background-color: #fff;
+
+	width: 100%;
+
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	border-top: 1px solid #C6CCC0;
+	border-bottom: 1px solid #C6CCC0;
+
+
+	.header {
+		width: 1000px;
+		margin: 0 auto;
+
+		text-align: center;
+
+		display: block;
+
+		.left {
+			text-align: left;
+			font-size: 34px;
+			font-weight: bold;
+			color: #5C5C5B;
+
+			margin-bottom: 20px;
+
+			width: 480px;
+
+			display: inline-block;
+
+			img {
+				vertical-align: baseline;
+
+				height: 30px;
+				width: auto;
+			}
+		}
+
+		.right {
+			text-align: right;
+
+			width: 400px;
+
+			display: inline-block;
+		}
+	}
+
+
+	.projectsbox {
+		width: 1000px;
+		margin: 0 auto;
+
+		font-family: arial;
+
+		text-align: center;
+
+		.projectbox {
+			width: 202px;
+
+			display: inline-block;
+			vertical-align: top;
+
+			padding: 0px;
+			margin: 10px;
+
+			border: 3px solid #EAF0E5;
+			border-radius: 7px;
+
+			.project {
+				width: 200px;
+				min-height: 302px;
+
+				margin: 0px;
+
+				text-align: center;
+
+				border: 1px solid #C6CCC0;
+				border-radius: 5px 5px 0px 0px;
+
+				.image {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					img {
+						border-radius: 3px;
+
+						width: 190px;
+						height: 140px;
+					}
+				}
+
+				.title {
+					text-align: left;
+
+					width: 190px;
+
+					padding-left: 5px;
+					padding-right: 8px;
+					margin-top: 5px;
+
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 14px;
+				}
+
+				.founder {
+					text-align: left;
+
+					width: 190px;
+
+					padding-left: 5px;
+					padding-right: 8px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+
+					font-weight: 100;
+					font-size: 12px;
+					line-height: 14px;
+					color: #858980;
+				}
+
+				.abstract {
+					text-align: left;
+
+					width: 190px;
+
+					padding-left: 5px;
+					padding-right: 8px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+
+					font-weight: 100;
+					font-size: 12px;
+					line-height: 14px;
+					color: #858980;
+					font-style: italic;
+				}
+
+				.location {
+					text-align: left;
+
+					width: 190px;
+
+					padding-left: 5px;
+					padding-right: 8px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+
+					font-weight: 100;
+					font-size: 14px;
+					line-height: 14px;
+					color: #858980;	
+
+					img {
+						vertical-align: middle;
+
+						height: 18px;
+						width: auto;
+
+						margin-right: 10px;
+					}			
+				}
+
+			}
+
+			.projectstats {
+				width: 200px;
+
+				background-color: #F4F4F4;
+
+				margin: 0px;
+
+				text-align: center;
+
+				border: 1px solid #C6CCC0;
+				border-radius: 0px 0px 5px 5px;
+
+				.progressbar {
+					width: 190px;
+					height: 7px;
+
+					position: relative;
+
+					margin-top: 5px;
+					margin-bottom: 5px;
+					margin-left: 5px;
+					padding: 0px 0px 0px 0px;
+
+					text-align: left;
+
+					border-radius: 5px;
+
+					background-color: #C6CCC0;
+
+					.fill {
+						position: absolute;
+						top: 0;
+						left: 0;
+
+						border-radius: 5px;
+
+						height: 100%;
+						width: 76%;
+
+						background-color: #66C62F;
+					}
+				}
+
+				.percentages {
+					width: 190px;
+
+					.percentage {
+						display: inline-block;
+
+						width: 90px;
+
+						margin-left: 2px;
+
+						text-align: left;
+
+						.number {
+							margin-left: 4px;
+
+							font-size: 16px;
+							font-weight: 700;
+						}
+
+						.label {
+							font-weight: 100;
+							color: #858980;
+							
+							background-color: transparent;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+#explanationmodule {
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	background-image: url(image_path('backgrounds/facesbg.jpg'));
+
+	.insideexplanation {
+		width: 900px;
+		margin: 0 auto;
+
+		padding: 20px;
+
+		border-radius: 5px;
+
+		background-color: #85c443;
+		opacity: 0.9;
+
+		.big {
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+
+			margin-bottom: 24px;
+		}
+	}
+}
+
+#footer {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 20px;
+
+	min-height: 200px;
+	width: 100%;
+
+	background-color: #F5F5F5;
+
+	color: #212937;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+
+	border-top: 2px #D5D5D5;
+
+	.footercontainer {
+		width: 900px;
+		margin: 0 auto;
+		padding: 0px;
+
+		.sitemap {
+			width: 900px;
+
+			text-align: center;
+
+			margin: 0 auto;
+			padding: 0px;
+
+			.element {
+				width: 220px;
+
+				text-align: left;
+
+				margin: 0px;
+
+				display: inline-block;
+				vertical-align: top;
+
+				.big {
+
+				}
+
+				.list {
+
+					ul {
+						margin: 0px;
+
+						li {
+							list-style: none;
+							
+							font-size: 14px;
+							font-weight: 200;
+							font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+							color: #A6AF9D;
+
+							margin: 0px;
+							padding: 0px;
+							padding-left: 5px;
+						}
+					}
+
+				}
+			}
+		}
+
+		.sponsors {
+			width: 900px;
+
+			margin: 0 auto;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			padding: 0px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			border-top: 1px solid #222A1F;
+			border-bottom: 1px solid #222A1F;
+
+			text-align: center;
+
+		}
+
+		.bottommenu {
+			width: 900px;
+			margin: 0 auto;
+			padding: 0px;
+
+			.bottomlogo {
+				width: 300px;
+				margin: 0px;
+				padding: 0px;
+
+				display: inline-block;
+
+			}
+
+			.bottomlinks {
+				margin: 0px;
+				padding: 0px;
+
+				text-align: right;
+
+				width: 550px;
+				display: inline-block;
+
+
+				ul {
+					text-align: right;
+
+					li {
+						text-align: right;
+						margin: 10px;
+						list-style: none;
+
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

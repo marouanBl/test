@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject: MyString
+  question: MyText
+  category_id: 1
+  status: false
+  is_solved: false
+  featured: false
+  user_id: 1
+  slug: MyString
+
+two:
+  subject: MyString
+  question: MyText
+  category_id: 1
+  status: false
+  is_solved: false
+  featured: false
+  user_id: 1
+  slug: MyString

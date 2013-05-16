@@ -1,0 +1,24 @@
+
+<% if user_signed_in? %>
+
+	<div class="fundthis">
+
+	  <%= form_for(Backer.new(params[:backer])) do |f| %>
+
+
+	      <%= f.text_field :value, :placeholder => "Inserez votre valeur ici en dinars" %>
+
+
+	      <%= f.hidden_field :project_id, :value => @project.id %>
+
+	      <%= f.hidden_field :user_id, :value => current_user.id %>
+
+	    <div class="actions">
+	      <input name="commit" type="submit" value="Repondre" />
+	    </div>
+	  <% end %>	
+
+	</div>
+
+
+<% end %>

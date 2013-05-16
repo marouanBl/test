@@ -1,0 +1,32 @@
+
+      <div class="usercard">
+
+        <div class="general">
+          <div class="avatar">
+            <% if @project.user.avatar_url.nil? %>
+              <%= image_tag "misc/noimage.png" %>
+            <% end %>
+
+            <% unless @project.user.avatar_url.nil? %>
+              <%= image_tag @project.user.avatar_url.to_s, :size => "100x100" %>
+            <% end %>
+          </div>
+          <div class="text">
+            Projet de <%= link_to @project.user.name, user_path(@project.user) %>
+
+          </div>
+        </div>
+
+        <div class="line">
+          <%= link_to "Sur Facebook", @project.facebook_link %>
+        </div>
+
+        <div class="line">
+          <%= link_to "Sur Twitter", @project.twitter_link %>
+        </div>
+
+        <div class="line">
+        	<%= link_to "See Full Bio", user_path(@project.user) %>
+        </div>
+
+      </div>

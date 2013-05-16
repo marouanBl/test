@@ -1,0 +1,13 @@
+
+  <div id="answserslist">
+      <% Answer.where('question_id = ?', @question.id).each do |answer| %>
+      <div id="answer">
+        <div class="content">
+          <%= raw(answer.content) %>
+        </div>  
+        <div class="user">
+          répondu par <%= link_to answer.user.name, user_path(answer.user) %> il y'a <strong><%= time_ago_in_words(answer.created_at) %></strong>
+        </div>      
+      </div>
+      <% end %>
+  </div>

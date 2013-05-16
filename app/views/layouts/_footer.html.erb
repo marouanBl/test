@@ -1,0 +1,83 @@
+<div id="footer">
+  <div class="footercontainer">
+
+    <div class="sitemap">
+
+      <div class="element">
+        <div class="big">
+          Découvrez
+        </div>
+        <div class="list">
+          <ul>
+            <% Category.all.each do |category| %>
+            <li><%= link_to category.name, category_path(category) %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="element">
+        <div class="big">
+          Créez
+        </div>
+        <div class="list">
+          <ul>
+            <li><%= link_to "Un nouveau Projet", startprojects_path() %></li>
+            <li><%= link_to "Une nouvelle Question", questions_path() %></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="element">
+        <div class="big">
+          Restez Connectés
+        </div>
+        <div class="list">
+          <ul>
+            <li><%= link_to "Facebook", "https://www.facebook.com/pages/Staritup/127746127413757" %></li>
+            <li><%= link_to "Twitter", "https://twitter.com/staritup1" %></li>
+            <li><%= link_to "Google+", "https://plus.google.com/u/0/104364357306788384494/posts" %></li>
+            <li><%= link_to "Contact Us", "mailto:contact@staritup.com" %></li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="element">
+        <div class="big">
+          Lisez
+        </div>
+        <div class="list">
+          <ul>
+            <li><%= link_to "Termes D'utilisation", terms_path() %></li>
+            <li><%= link_to "Contact", "mailto:contact@staritup.com" %></li>
+            <li><%= link_to "Politique de Confidencialité", policies_path() %></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sponsors">
+
+      <div id="footerpartners" class="carousel slide">
+        <%= image_tag "partners/globalnet.png" %>
+      </div>
+
+    </div>
+
+    <div class="bottommenu">
+      <div class="bottomlogo">
+        Staritup
+      </div>
+
+      <div class="bottomlinks">
+        <ul>
+          <li>© 2013 MBreath, Inc</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+ 

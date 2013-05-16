@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @wizard_step.name %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @wizard_step.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_wizard_step_path(@wizard_step) %> |
+<%= link_to 'Back', wizard_steps_path %>

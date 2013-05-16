@@ -1,0 +1,30 @@
+
+
+<div id="yourprojects">
+  
+  <div class="created">
+    
+    <% Project.where("user_id = ?", current_user.id).each do |project| %>
+    <div class="project">
+      <div class="thumb">
+        <%= image_tag project.miniature.to_s, :size => '180x125' %>
+      </div>
+
+      <div class="desc">
+        <div class="link">
+          <%= link_to project.title, project_path(project) %>
+        </div>
+        <div class="date">
+          <%= time_ago_in_words(project.created_at) %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+
+  </div>
+
+  <div class="create">
+    <%= link_to 'Ajouter un nouveau projet', guidelines_path() %>
+  </div>
+</div>

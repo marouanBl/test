@@ -1,0 +1,32 @@
+
+
+<div id="register" class="devise">
+  <div class="register">
+    <div class="explanation">
+      <p>One-click sign in if you've already connected your Facebook account, or quickly sign up for Twitch with Facebook</p>
+    </div>
+
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+ 
+      <div id="forminput">
+        <div class="label">Email</div>
+        <div class="input">
+          <%= f.email_field :email, :autofocus => true %>
+        </div>
+      </div>
+
+      <div id="forminput">
+        <div class="label">Password</div>
+        <div class="input">
+        	<%= f.password_field :password %>
+        </div>
+      </div>
+
+
+
+      <input name="commit" type="submit" value="Sign In" class="inputbutton" /><%= f.check_box :remember_me %> Remember Me
+
+    <% end %>
+  </div>
+
+</div>

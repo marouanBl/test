@@ -1,0 +1,53 @@
+== Things To Do V1
+
+3 - set permissions
+
+5 - configure carrierwave for users
+
+9 - design the whole thing
+
+10 - Refactor the footer
+
+11 - Design the answers section
+
+11 - finish wizard steps (finances)
+
+12 - traduct the data
+
+13 - Facebook login
+
+13 - DONE home
+
+13 - DONE last project module
+
+14 - DONE before_filter
+
+15 - DONE questions listing
+
+16 - DONE register design
+
+17 - DONE login design
+
+1 - DONE add question categories layouts
+
+2 - DONE add answers
+
+10 - DONE add carousel for the wizard
+
+4 - DONE add quick answer
+
+5 - DONE configure carrierwave for projects
+
+
+== POST RENCONTRE
+
+6 - set levels and badges
+
+7 - set tags for questions
+
+8 - set skills for users
+
+== V2
+
+1 - Ajax the app
+

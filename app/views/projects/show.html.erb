@@ -1,0 +1,52 @@
+<div id="projectshow">
+  
+  <div class="header">
+    <div class="big">
+      <%= @project.title %>
+    </div>
+    <div class="subtitle">
+      par <%= link_to @project.user.name, user_path(@project.user) %>
+    </div>
+  </div>
+
+  <div class="pinfo">
+    <div class="data">
+      <ul>
+        <li><%= Backer.where("project_id = ?", @project.id).count %> Investisseurs</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li><%= @project.location.name %></li> &bull; 
+        <li><%= @project.category.name %></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="projectbox">
+    
+    <div class="leftcolumn">
+
+      <%= render "projects/video" %>
+
+      <%= render "projects/social" %>
+
+      <%= render "projects/resume" %>
+
+      <%= render "projects/presentation" %>
+
+
+      
+    </div>
+
+    <div class="rightcolumn">
+
+      <%= render "projects/project_data" %>
+
+      <%= render "projects/creator" %>
+
+    </div>
+  </div>
+</div>
+

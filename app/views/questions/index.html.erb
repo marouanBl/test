@@ -1,0 +1,51 @@
+<div id="questionshome">
+    <div class="maincore">
+        <!--<div class="tree">
+            <%= link_to "Home", questions_path() %> >
+        </div>-->
+
+        <div class="bigbox">
+            <div class="boxheader">
+                Domain Questions
+            </div>
+
+            <div class="threadsbox">
+                <% Category.all.each do |category| %>
+                <div class="thread">
+                    <div class="icon">
+                        <%= image_tag "misc/thread.png" %>
+                    </div>
+                    <div class="text">
+                        <div class="title">
+                            <%= link_to category.name, category_path(category) %>
+                        </div>
+                        <div class="description">
+                            <%= category.description %>I am an authorized representative of the copyright owner.
+                        </div>
+                    </div>
+                    <div class="count">
+                        <%= Question.where("category_id = ?", category.id).count %> questions
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="sidebarcore">
+        <div class="lastquestions">
+            <div class="header">
+                Last Questions:
+            </div>
+
+            <div class="questions">
+                <% Question.order("created_at").last(10).each do |question| %>
+                <div class="question">
+                    <%= link_to question.user.username, user_path(question.user) %> a demandé <%= link_to question.subject, question_path(question) %>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

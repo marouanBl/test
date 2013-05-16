@@ -1,0 +1,404 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#questionshome {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.maincore {
+		width: 700px;
+
+		display: inline-block;
+
+		.tree {
+			width: 700px;
+
+			line-height: 30px;
+			font-size: 15px;
+			color: #666;
+			font-weight: 100;
+
+			vertical-align: middle;
+
+			border-bottom: 1px solid #C6CCC0;
+
+			a {
+				padding-left: 10px;
+
+				color: #666;
+
+				&:hover {
+					border-bottom: 1px dotted #C6CCC0;
+				}
+			}
+		}
+
+		.bigbox {
+			width: 700px;
+
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+			.boxheader {
+				font-size: 40px;
+				font-weight: 100;
+				line-height: 70px;
+				color: #666;
+			}
+
+			.threadsbox {
+				width: 700px;
+
+				.thread {
+					width: 700px;
+
+					padding-top: 10px;
+					padding-bottom: 10px;
+
+					border-top: 1px solid #C6CCC0;
+
+					.icon {
+						display: inline-block;
+
+						width: 50px;
+
+						padding-right: 20px;
+						
+						img {
+							background-color: #15A877;
+						
+							border-radius: 50%;
+
+							padding: 20px 20px 20px 20px ;
+						}
+						
+
+					}
+
+					.text {
+						display: inline-block;
+						width: 500px;
+
+						vertical-align: middle;
+
+						.title {
+							font-weight: 300;
+							font-size: 20px;
+							
+							a {
+								color: #15A877;
+							}
+							
+						}
+
+						.description {
+							font-weight: 100;
+						}
+					}
+
+					.count {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	.sidebarcore {
+		width: 280px;
+
+		margin-left: 10px;
+
+		display: inline-block;
+		vertical-align: top;
+
+		.lastquestions {
+			background-color: #FAFAFA;
+			
+			border: 1px solid #E3E3E3;
+
+			padding-left: 10px;
+			padding-right: 10px;
+
+			.header {
+				line-height: 30px;
+				font-size: 15px;
+				color: #666;
+				font-weight: 300;
+
+				vertical-align: middle;
+
+				border-bottom: 1px solid #C6CCC0;
+			}
+
+			.questions {
+				font-size: 14px;
+				font-weight: 200;
+				letter-spacing: 2px;
+
+				.question {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+
+#questionscategory {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.tree {
+			width: 1000px;
+
+			line-height: 30px;
+			font-size: 15px;
+			color: #666;
+			font-weight: 100;
+
+			vertical-align: middle;
+
+			border-bottom: 1px solid #C6CCC0;
+
+			a {
+				padding-left: 10px;
+
+				color: #666;
+
+				&:hover {
+					border-bottom: 1px dotted #C6CCC0;
+				}
+			}
+
+	}
+
+	.header {
+		font-size: 40px;
+		font-weight: 100;
+		line-height: 70px;
+		color: #666;
+	}
+
+	.questionstable {
+		width: 1000px;
+
+		.tableheader {
+			width: 1000px;
+
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+
+			border-radius: 5px;
+
+			background-color: #15A877;
+
+			text-align: center;
+			color: #fff;
+			font-weight: 100;
+			font-size: 14px;
+
+			.question {
+				width: 600px;
+
+				display: inline-block;
+			}
+
+			.replies {
+				width: 150px;
+
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.byanddate {
+				width: 200px;
+
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+
+		.questions {
+			width: 1000px;
+
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+
+			border-radius: 5px;
+
+			text-align: center;
+			color: #fff;
+			font-weight: 200;
+			font-size: 16px;
+
+			.question {
+				width: 1000px;
+
+				padding-bottom: 10px;
+
+				.content {
+					width: 600px;
+
+					text-align: left;
+
+					display: inline-block;
+				}
+
+				.replies {
+					width: 150px;
+
+					color: #000;
+
+					display: inline-block;
+					vertical-align: top;
+				}
+
+				.byanddate {
+					width: 200px;
+
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+
+		}
+
+	}
+}
+
+
+
+#showquestion {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	.thequestion {
+		width: 900px;
+
+		.topquestion {
+			background-color: #F5F5F5;
+
+			font-size: 16px;
+			font-weight: 700;
+			color: #0D0D0D;
+
+			border: 1px solid #C1C1C1;
+			border-radius: 5px;
+
+			box-shadow: 0 0 10px #7A3589;
+
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.theuser {
+			width: 200px;
+
+			display: inline-block;
+
+			text-align: center;
+
+			img {
+				margin-bottom: 10px;
+			}
+		}
+
+		.question {
+			width: 680px;
+
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.questionbottom {
+			background-color: #F5F5F5;
+
+			font-size: 16px;
+			font-weight: 200;
+			font-style: italic;
+			color: #0D0D0D;
+			text-align: right;
+
+			border: 1px solid #C1C1C1;
+			border-radius: 5px;
+
+			box-shadow: 0 0 10px #B7CE81;
+
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+			a {
+				border-bottom: 1px dashed #0D0D0D;
+			}			
+		}
+	}
+}
+
+
+#answserslist {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+
+	.content {
+
+	}
+
+	.user {
+		font-size: 16px;
+		font-weight: 200;
+		font-style: italic;
+		color: #0D0D0D;
+		text-align: right;
+
+		border: 1px solid #C1C1C1;
+		border-radius: 5px;
+
+		box-shadow: 0 0 10px #B7CE81;
+
+		padding: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		a {
+			border-bottom: 1px dashed #0D0D0D;
+		}	
+
+		box-shadow: 0 0 10px #215F83;
+	
+	}
+	
+}
+
+#quickanswer {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	.actions {
+		width: 900px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		text-align: right;
+	}
+
+}

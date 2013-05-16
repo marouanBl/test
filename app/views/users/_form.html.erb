@@ -1,0 +1,83 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <% if @user.avatar? %>
+  <div class="field">
+    <%= image_tag @user.avatar_url(:thumb).to_s %>
+  </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    Add avatar<br />
+    <input id="user_avatar" name="user[avatar]" size="30" type="file" />
+  </div>
+  <div class="field">
+    <%= f.label :biography %><br />
+    <%= f.text_area :biography %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday %><br />
+    <%= f.number_field :birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :birthmonth %><br />
+    <%= f.number_field :birthmonth %>
+  </div>
+  <div class="field">
+    <%= f.label :birthyear %><br />
+    <%= f.number_field :birthyear %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label :town %><br />
+    <%= f.text_field :town %>
+  </div>
+  <div class="field">
+    <%= f.label :country_id %><br />
+    <%= f.number_field :country_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br />
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :cid %><br />
+    <%= f.number_field :cid %>
+  </div>
+  <div class="field">
+    <%= f.label :is_coach %><br />
+    <%= f.check_box :is_coach %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

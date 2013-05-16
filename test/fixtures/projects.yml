@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  slug: MyString
+  miniature: MyString
+  project_category_id: 1
+  abstract: MyText
+  location_id: 1
+  video: MyText
+  description: MyText
+  challenges: MyText
+
+two:
+  title: MyString
+  slug: MyString
+  miniature: MyString
+  project_category_id: 1
+  abstract: MyText
+  location_id: 1
+  video: MyText
+  description: MyText
+  challenges: MyText

@@ -1,0 +1,39 @@
+
+
+      <div class="fundbox">
+
+        <div class="data">
+          <div class="chiffre">
+            <%= Backer.where("project_id = ?", @project.id).count %>
+          </div>
+          <div class="label">
+            inverstisseurs
+          </div>
+        </div>
+
+        <div class="data">
+          <div class="chiffre">
+            <%= Backer.where("project_id = ?", @project.id).sum('value') %>
+          </div>
+          <div class="label">
+            rassemblé d'un total de <%= @project.somme %> D.T visé.
+          </div>
+        </div>
+
+        <!--<div class="data">
+          <div class="chiffre">
+            26
+          </div>
+          <div class="label">
+            days to go
+          </div>
+        </div>-->
+        <div class="explanation">
+          Vous pouvez dès à présent, dans le cas où ce projet vous convient, en faire partie, en devenir actionaire et detenteur de parts, tout en financant ce projets vers sa reussite pour bénèficier vous même de son succés.
+        </div>
+
+        <%= render "projects/back_project" %>
+
+
+
+      </div>

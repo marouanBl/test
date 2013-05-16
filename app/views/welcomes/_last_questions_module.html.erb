@@ -1,0 +1,28 @@
+
+<% unless Question.order("created_at").last.nil? %>
+
+
+<div id="introquestionsmodule">
+	<div class="header">
+		<div class="left">
+			<%= image_tag "icons/comments.png" %> Dernières Questions
+		</div>
+
+		<div class="right">
+			<%= link_to "Découvrir le tout", questions_path(	) %>
+		</div>
+	</div>
+
+  <div class="lastone">
+    <strong><%= Question.last.subject %></strong></br>
+    <%= raw(Question.last.question) %>
+  </div>
+  <div class="listcategories">
+    <ul>
+      <% Category.all.each do |category| %>
+      <li><%= link_to category.name, category_path(category) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<% end %>
